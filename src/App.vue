@@ -1,31 +1,66 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- <h1>{{ msg }}</h1> -->
+    <nav class=" navbar navbar-expand-lg fixed-top row">
+
+      <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
+      <router-link tag="li" class="col" class-active="active" to="/home" exact>home</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/photo" exact>photo</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/prices" exact>prices</router-link>
+
+      <router-link tag="li" class="col" class-active="active" to="/things" exact>things</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/weather" exact>weather</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/contact" exact>contact</router-link>
+    </nav>
+
+    <router-view></router-view>
+  <app-footer></app-footer>
   </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<script>
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  export default {
+    name: 'app',
+    data() {
+      return {
+        msg: 'Welcome to our LMN Travel App'
+      }
+    }
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+</script>
+
+<style lang="scss">
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+  }
+
+
+  h1,
+  h2 {
+    font-weight: normal;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+
+  a {
+    color: #42b983;
+  }
+
+
+
 </style>
