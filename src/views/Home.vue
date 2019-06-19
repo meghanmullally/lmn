@@ -42,7 +42,7 @@
 </script>
 
 
-<style lang="scss">
+<style>
   #home {
     background-image: url("../assets/Puerto-Rico.jpg");
     background-size: cover;
