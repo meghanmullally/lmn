@@ -8,7 +8,9 @@
     </section>
 
     <p>{{question}}</p>
-    <input class="question" type="text" value="">
+    <!-- <input class="question" type="text" value=""> -->
+    <userInput @inputData="updateMessage" />
+  
 
 
 
@@ -17,20 +19,30 @@
 </template>
 <script>
   import moment from 'moment';
+  import Results from "../components/Results.vue"
+  import userInput from "../components/userInput.vue";
 
   export default {
     name: 'home',
+    components: {
+     Results,
+      userInput
+    },
     data() {
       return {
         msg: "Home Page",
         question: "Where would you like to go?",
         message: 'Current Time:',
-        currentTime: null
+        currentTime: null,
+        childData: ""
       }
     },
     methods: {
       updateCurrentTime() {
         this.currentTime = moment().format('LTS');
+      },
+      updateMessage(variable) {
+        this.childData = variable;
       }
     },
     created() {
@@ -42,7 +54,7 @@
 </script>
 
 
-<style>
+<style lang="scss">
   #home {
     background-image: url("../assets/Puerto-Rico.jpg");
     background-size: cover;
@@ -65,12 +77,15 @@
   }
 
   .time {
-    font-size: 7em;
+    font-size: 8em;
+    font-weight: bold;
+    letter-spacing: -5px;
   }
 
   p {
     color: #ffffff;
-    font-size: 34px;
+    font-size: 54px;
+    font-weight: bold;
   }
 
   .question {

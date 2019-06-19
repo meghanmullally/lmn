@@ -1,11 +1,11 @@
 import Vue from "vue";
 import Router from "vue-router";
-import home from "./views/home.vue";
-import photo from "./views/photo.vue";
-import prices from "./views/prices.vue";
-import things from "./views/things.vue";
-import weather from "./views/weather.vue";
-import contact from "./views/contact.vue";
+import home from "./pages/home.vue";
+import photo from "./pages/photo.vue";
+import prices from "./pages/prices.vue";
+import things from "./pages/things.vue";
+import weather from "./pages/weather.vue";
+import contact from "./pages/contact.vue";
 
 
 Vue.use(Router);
@@ -19,15 +19,16 @@ export default new Router({
       name: "home",
       component: home
     },
-    {
-      path: "/photo",
-      name: "photo",
-      component: photo
-    },
+    
     {
       path: "/prices",
       name: "prices",
       component: prices
+    },
+    {
+      path: "/photo",
+      name: "photo",
+      component: photo
     },
     {
       path: "/things",

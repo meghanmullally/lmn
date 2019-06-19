@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <!-- <h1>{{ msg }}</h1> -->
-    <nav class=" navbar navbar-expand-lg fixed-top row">
+    <nav class="navbar navbar-expand-lg fixed-top row">
 
       <!-- <router-link tag="li" class="col" class-active="active" to="/" exact>MAIN</router-link> -->
       <router-link tag="li" class="col" class-active="active" to="/home" exact>home</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/photo" exact>photo</router-link>
       <router-link tag="li" class="col" class-active="active" to="/prices" exact>prices</router-link>
+      <router-link tag="li" class="col" class-active="active" to="/photo" exact>photo</router-link>
 
       <router-link tag="li" class="col" class-active="active" to="/things" exact>things</router-link>
       <router-link tag="li" class="col" class-active="active" to="/weather" exact>weather</router-link>
@@ -22,16 +22,23 @@
 
   export default {
     name: 'app',
+
     data() {
       return {
-        msg: 'Welcome to our LMN Travel App'
+        msg: 'Welcome to our LMN Travel App', 
+      home: {},
+      photos: {},
+      prices: {},
+      weather: {},
+      things: {}
+   
       }
     }
   }
 
 </script>
 
-<style>
+<style lang="scss">
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;

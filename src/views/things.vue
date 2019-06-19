@@ -2,8 +2,11 @@
 <template>
   <div id="app">
     {{info}}
-    
+
+
+  <h4>Videos on: </h4>
     <youtube :video-id="videoId"></youtube>
+    
 
   </div>
 </template>
@@ -22,15 +25,16 @@ export default{
     return {
       videoIds : [],
       videoId:'videoId',
-      info: "not working help"
+      info: "",
+      queryCountry: this.$store.getters.city //this.city
     }
   },
   mounted (){
-
+    console.log(this.queryCountry, "my cityyyyyy!");
     axios.get('https://www.googleapis.com/youtube/v3/search', {
       params: {
       part: "snippet, id",
-      q: "travel guide madrid",
+      q: "travel guide " + this.queryCountry,
       key: "AIzaSyBGnNxm3xCX-HWVQrxhPk-dfEiZAOx_FVQ"
     }
   })
@@ -42,13 +46,13 @@ export default{
           this.videoIds.push(results.data.items[i].id.videoId);
         }
 
-        this.videoId = this.videoIds.pop();      
+        this.videoId = this.videoIds[0];      
     })
   }
 }
 </script>
 
-<style>
+<style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -58,21 +62,15 @@ export default{
   margin-top: 60px;
 }
 
-h1, h2 {
+h1, h2, h4{
   font-weight: normal;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+h4 {
+  font-size: 34px;
+  color: #5eabe3;
+  margin: 20px;
+  
 }
 
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
