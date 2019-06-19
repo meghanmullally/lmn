@@ -14,31 +14,29 @@
     </nav>
 
     <router-view></router-view>
-  <app-footer></app-footer>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-
   export default {
     name: 'app',
 
     data() {
       return {
-        msg: 'Welcome to our LMN Travel App', 
-      home: {},
-      photos: {},
-      prices: {},
-      weather: {},
-      things: {}
-   
+        msg: 'Welcome to our LMN Travel App',
+        home: {},
+        photos: {},
+        prices: {},
+        weather: {},
+        things: {}
+
       }
     }
   }
-
 </script>
 
-<style lang="scss">
+<style scoped>
   #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -67,7 +65,4 @@
   a {
     color: #42b983;
   }
-
-
-
 </style>
