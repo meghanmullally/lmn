@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{msg}}</h1>
 
-      <div id="app">
+      <div id="things">
         {{info}}
       <!-- <youtube :video-id="videoId"></youtube> -->
       <div class="row">
@@ -47,7 +47,7 @@ import VueYouTubeEmbed from 'vue-youtube-embed'
 
 Vue.use(VueYouTubeEmbed);
 export default {
-  name: "app",
+  name: "things",
   data() {
     return {
       videoIds: [],
