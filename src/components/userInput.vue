@@ -1,8 +1,8 @@
 <template>
   <div id="userInput">
-    <input placeholder="Origin" v-model="tempMessage" @keyup.enter="submit"/>
-    <input placeholder="Destination" v-model="destiny" @keyup.enter="submit"/>
-    <input placeholder="Departure date" v-model="date" @keyup.enter="submit"/>        
+    <input placeholder="Origin ex: SEA" v-model="tempMessage" @keyup.enter="submit"/>
+    <input placeholder="Destination ex: LAX" v-model="destiny" @keyup.enter="submit"/>
+    <input placeholder="YYYY-MM-DD" v-model="date" @keyup.enter="submit"/>        
   </div>
 </template>
 
