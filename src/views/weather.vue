@@ -1,5 +1,5 @@
 <template>
-  <div id="weather">
+
     <div class="hello">
       <h1>{{msg}}</h1>
 
@@ -11,7 +11,7 @@
         </GmapMap>
       </div>
     </div>
-  </div>
+
 </template>
 <script>
   import axios from "axios";
