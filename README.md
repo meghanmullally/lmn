@@ -4,6 +4,15 @@
 
 # LMN-Travel
 
+### Description
+User inputs a place they would like to visit and the it will output flight details. It will sort and show only the cheapest flight. Then on the next page it will show pictures of the location they would like to visit. The following page will show things to do such as videos.
+
+
+### Future Featurers
+Events, places to eat and the weather. When you get to the destination you should be able to chat with others in the app.
+
+
+
 ## Project setup
 ```
 yarn install
@@ -38,6 +47,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 - [Visual Studio Code](https://code.visualstudio.com/)
 - [VueJs](https://vuejs.org/)
 
+
+### Challenges
+- Dealing with multiple API's, cors errors, ajax to axios conversions
+- Figuring out how to share data between pages.
+- Git merges
 
 
 ### Authors 
