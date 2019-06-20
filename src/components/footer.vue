@@ -1,7 +1,7 @@
 <template>
     <footer class=" footer fixed-bottom">
       &copy; LMN Travel
-      <img src="../assets/lmn-logo.png">
+      <img src="../assets/lmn-logo_clipped_rev_1.png">
     </footer>
 </template>
 <script>
