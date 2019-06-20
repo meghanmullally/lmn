@@ -4,7 +4,7 @@ import home from "./views/home.vue";
 import photo from "./views/photo.vue";
 import prices from "./views/prices.vue";
 import things from "./views/things.vue";
-import weather from "./views/weather.vue";
+// import weather from "./views/weather.vue";
 import contact from "./views/contact.vue";
 
 
@@ -35,11 +35,11 @@ export default new Router({
       name: "things",
       component: things
     },
-    {
-      path: "/weather",
-      name: "weather",
-      component: weather
-    },
+    // {
+    //   path: "/weather",
+    //   name: "weather",
+    //   component: weather
+    // },
     {
       path: "/contact",
       name: "contact",

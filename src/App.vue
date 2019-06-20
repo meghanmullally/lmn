@@ -9,7 +9,7 @@
       <router-link tag="li" class="col" class-active="active" to="/photo" exact>photo</router-link>
 
       <router-link tag="li" class="col" class-active="active" to="/things" exact>things</router-link>
-      <router-link tag="li" class="col" class-active="active" to="/weather" exact>weather</router-link>
+      <!-- <router-link tag="li" class="col" class-active="active" to="/weather" exact>weather</router-link> -->
       <router-link tag="li" class="col" class-active="active" to="/contact" exact>contact</router-link>
     </nav>
 
@@ -28,7 +28,7 @@
         home: {},
         photos: {},
         prices: {},
-        weather: {},
+        // weather: {},
         things: {}
 
       }
