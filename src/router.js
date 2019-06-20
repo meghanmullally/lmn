@@ -35,11 +35,11 @@ export default new Router({
       name: "things",
       component: things
     },
-    // {
-    //   path: "/weather",
-    //   name: "weather",
-    //   component: weather
-    // },
+    {
+      path: "/weather",
+      name: "weather",
+      component: weather
+    },
     {
       path: "/contact",
       name: "contact",
