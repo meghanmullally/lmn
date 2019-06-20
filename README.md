@@ -2,7 +2,7 @@
 <img src="https://github.com/meghanmullally/lmn/blob/master/src/assets/lmn-logo.png?raw=true" width="300" height="300">
 </p>
 
-# lmn-travel
+# LMN-Travel
 
 ## Project setup
 ```
