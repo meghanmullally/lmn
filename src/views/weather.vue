@@ -1,4 +1,5 @@
 <template>
+<div id="weather">
   <div class="hello">
     <h1>{{msg}}</h1>
 
@@ -20,10 +21,12 @@
       </GmapMap>
     </div>
   </div>
+  </div>
 </template>
 <script>
 import axios from "axios";
 import GoogleMapsLoader from "google-maps";
+
 export default {
   name: "google-map",
   props: ["name"],
