@@ -38,7 +38,7 @@ export default {
        url: "https://skyscanner-skyscanner-flight-search-v1.p.rapidapi.com/apiservices/browsequotes/v1.0/US/USD/en-US/" + this.origin +"-sky/"+ this.destination + "-sky/" + this.departing,
        headers: {
         'X-RapidAPI-Host': 'skyscanner-skyscanner-flight-search-v1.p.rapidapi.com',
-        "X-RapidAPI-Key": "ec7228ea2fmsh9b2bb9e23723a32p1f2123jsnb1ea8ec75a54"
+        "X-RapidAPI-Key": "e52d2aae21mshab7235480ad785cp1f2bb4jsn5ee55b97d844"
        },
       //  params: {
       //   inboundPartialDate: this.return
