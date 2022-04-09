@@ -11,7 +11,7 @@
     "bootstrap-vue": "^2.0.0-rc.24",
     "core-js": "^2.6.9",
     "google-maps": "^3.3.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "sass-loader": "^7.1.0",
     "vue": "^2.6.10",
     "vue-axios": "^2.1.4",
